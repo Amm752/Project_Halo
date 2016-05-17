@@ -6,10 +6,11 @@ public class Models {
 
     // Function for postion
 
-    // Function for Defeting a poke
+    // Function for Defet   ing a poke
         // else Freez
 
     // Function for Support Poke
 
+    // check if the move is vaild
 
 }
