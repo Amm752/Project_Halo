@@ -11,5 +11,6 @@ public class Models {
 
     // Function for Support Poke
 
+    // check if the move is vaild
 
 }
