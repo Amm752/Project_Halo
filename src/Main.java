@@ -7,6 +7,7 @@ public class Main
         //Interface.userMove(args);
         //Interface.displayBoard();
         Poke_database.readfile();
+        
     }
 
 
