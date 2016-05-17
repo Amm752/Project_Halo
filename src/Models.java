@@ -3,7 +3,7 @@
  */
 public class Models {
     // Grap the id, hp, type, from the database
-
+    //int[] id =
     // Function for postion
 
     // Function for Defet   ing a poke

@@ -32,7 +32,11 @@ public class Interface {
     }
 
 
-    public static void displayBoard() {
+    public static void displayBoard()
+    {
+
+
+
         String line = "";
         System.out.println();
         line = "0| " + " 1|  "+" 2|  "+ " 3|  "  + " 4| " + " 5|  " + " 6|  " + " 7|  "  + " 8|  " + "9|  " + " 10|  ";
@@ -70,8 +74,17 @@ public class Interface {
         System.out.println("------------------------------------------------------------------------");
     }
 
-    public static String getNH(String square) {
-        return null;
+    public static String getNH(String square)
+    {
+         A1 = Poke_database.name("130");
+            return A1;
+//          if ((id< 152) && (id > 0))
+//        {
+//            String id2 = String.valueOf(id);
+//            return Poke_database.name(id2);
+//       }
+        //return Poke_database.name(id);
+       // return null;
     }
 
 

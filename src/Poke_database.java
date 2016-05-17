@@ -18,8 +18,6 @@ public class Poke_database {
             while ((line = bufferedReader.readLine()) != null) {
                 System.out.println(line);
                 String[] words = line.split(" ");
-                // System.out.println(words[0]);
-                // System.out.println(words[1]);
             }
             bufferedReader.close();
         } catch (FileNotFoundException ex) {
