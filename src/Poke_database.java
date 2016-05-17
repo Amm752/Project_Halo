@@ -15,7 +15,6 @@ public class Poke_database {
         try {
             FileReader fileReader = new FileReader(fileName);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
-
             while ((line = bufferedReader.readLine()) != null) {
                 System.out.println(line);
                 String[] words = line.split(" ");
@@ -31,28 +30,72 @@ public class Poke_database {
     }
 
 
-//    public static String getHp(String x) {
-//        String fileName = "poke_data_base2.txt";
-//        String line = null;
-//        try {
-//            FileReader fileReader = new FileReader(fileName);
-//            BufferedReader bufferedReader = new BufferedReader(fileReader);
-//
-//            while ((line = bufferedReader.readLine()) != null) {
-//                System.out.println(line);
-//                String[] words = line.split(" ");
-//                if (words[0] == x) {
-//                    return words[5];
-//                }
-//                // System.out.println(words[1]);
-//            }
-//            bufferedReader.close();
-//        } catch (FileNotFoundException ex) {
-//            System.out.println("Unable to open file '" + fileName + "'");
-//        } catch (IOException ex) {
-//            System.out.println("Error reading file '" + fileName + "'");
-//
-//        }
-//        return null;
-//    }
+   public static String name(String x)
+   {
+        String fileName = "poke_data_base2.txt";
+        String line = null;
+        try
+        {
+                FileReader fileReader = new FileReader(fileName);
+                BufferedReader bufferedReader = new BufferedReader(fileReader);
+                while ((line = bufferedReader.readLine()) != null)
+                {
+                    String[] words = line.split(" ");
+
+                    if (words[0].equals(x))
+                    {
+                        String name = words[1].substring(1);
+
+                        return name;
+                    }
+                }
+                bufferedReader.close();
+            }
+        catch (FileNotFoundException ex)
+        {
+            System.out.println("Unable to open file '" + fileName + "'");
+        }
+        catch (IOException ex)
+        {
+            System.out.println("Error reading file '" + fileName + "'");
+        }
+
+       System.out.println("not found");
+       return null;
+    }
+
+    public static int hp(String x)
+    {
+        String fileName = "poke_data_base2.txt";
+        String line = null;
+        try {
+            FileReader fileReader = new FileReader(fileName);
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+
+            while ((line = bufferedReader.readLine()) != null)
+            {
+
+                String[] words = line.split(" ");
+
+                if (words[0].equals(x))
+                {
+                    String hp_string = words[2].substring(6);
+                    float hp_float = (Float.valueOf(hp_string)).floatValue();
+                    int hp_int = (int)hp_float;
+                    return hp_int;
+                }
+            }
+            bufferedReader.close();
+        }
+        catch (FileNotFoundException ex)
+        {
+            System.out.println("Unable to open file '" + fileName + "'");
+        }
+        catch (IOException ex)
+        {
+            System.out.println("Error reading file '" + fileName + "'");
+        }
+        System.out.println("not found");
+        return 0;
+    }
 }
