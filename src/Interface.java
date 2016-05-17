@@ -1,11 +1,20 @@
+import java.util.Scanner;
+
 /**
  * Created by ahmad on 5/15/2016.
  */
 
 public class Interface {
 
+    public static void userMove(String[] args) {
+        System.out.println("Hello, Player");
+        System.out.println();
+        Scanner inputName = new Scanner(System.in);
+        System.out.println("Enter your name:");
+        String userInput = inputName.nextLine();
 
-
+        System.out.println("Welcome: "+ userInput);
+    }
 
 
 
