@@ -50,8 +50,8 @@ public  class Interface
     public static void displayBoard(String grid[][])
     {
         String line = "";
-        grid[1][1]= Poke_database.name("130");
-        System.out.println();
+        grid[1][1]= Poke_database.name("001");
+        System.out.println("dkfh");
         line = "0| " + " 1|  "+" 2|  "+ " 3|  "  + " 4| " + " 5|  " + " 6|  " + " 7|  "  + " 8|  " + "9|  " + " 10|  ";
         System.out.println(line);
         System.out.println("------------------------------------------------------------------------");
